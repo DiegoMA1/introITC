@@ -4,7 +4,8 @@ public class FuncionesRecursivas{
         // 1 + 2 + 3 + ...
         int n = 15;
         
-        System.out.format("%d",sumatoriaRecursiva(n));
+        System.out.format("%d\n",sumatoriaRecursiva(n));
+        System.out.format("%d\n",factorial(n));
     }
     public static int sumatoriaRecursiva(int n){
         if(n==1)
@@ -20,5 +21,11 @@ public class FuncionesRecursivas{
             suma+=cont;
         }
         return suma;
+    }
+    public static long factorial(long n){
+        if(n<=1)
+            return 1;
+        else    
+            return n*factorial(n-1);
     }
 }
